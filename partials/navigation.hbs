@@ -1,0 +1,13 @@
+{{#foreach navigation}}
+    <li class="drawer-list-item">
+	  <a href="{{url absolute="true"}}" id="nav-{{slug}}" class="nav-link" data-pjax>
+	    {{label}}
+	  </a>
+	</li>
+{{/foreach}}
+<li class="drawer-list-divider"></li>
+<li class="drawer-list-item">
+  <a href="{{@blog.url}}/rss/">
+    <i class="fa fa-rss"></i>Feed
+  </a>
+</li>

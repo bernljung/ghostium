@@ -102,6 +102,13 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      $(".nav-link").each(function(item) {
+        var cssClass = icons[this.id.replace('nav-', '')];
+        if (cssClass) {
+          $(this).prepend('<i class="' + cssClass + '">');
+        }
+      });
     </script>
   </body>
 </html>
